@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <!-- custom css link -->
+    <link rel="stylesheet" href="./css/home.css" />
+    <title>Expozure</title>
+  </head>
+  <body>
+    <div class="color_switcher">
+      <div class="switcherbutton" onclick="active()">
+        <!-- <i class="fas fa-cog"></i> -->
+        <i class="fa-solid fa-palette"></i>
+      </div>
+      <h3>Select Color</h3>
+      <div class="theme_button_container">
+        <span
+          class="theme_button"
+          data-color="#fff"
+          style="background: rgb(69, 65, 65)"
+          onclick="changecolor('rgb(69, 65, 65)')"
+        >
+        </span>
+        <span
+          class="theme_button"
+          data-color="#fff"
+          style="background: rgb(203, 30, 30)"
+          onclick="changecolor('rgb(203, 30, 30)')"
+        >
+        </span>
+        <span
+          class="theme_button"
+          data-color="#fff"
+          style="background: rgb(20, 245, 54)"
+          onclick="changecolor('rgb(20, 245, 54)')"
+        >
+        </span>
+        <span
+          class="theme_button"
+          data-color="#fff"
+          style="background: rgb(20, 245, 54)"
+          onclick="changecolor('rgb(20, 245, 54)')"
+        >
+        </span>
+        <span
+          class="theme_button"
+          data-color="#fff"
+          style="background: rgb(20, 245, 54)"
+          onclick="changecolor('rgb(20, 245, 54)')"
+        >
+        </span>
+        <span
+          class="theme_button"
+          data-color="#fff"
+          style="background: rgb(40, 7, 49)"
+          onclick="changecolor('#fff')"
+        >
+        </span>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="./Home.html"
+        ><img src="/images/Main logo slogan_edited 1.png" alt="" srcset=""
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="./Home.html"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="./editprofile.html">Edit Profile </a>
+          </li>
+
+          <li class="nav-item active">
+            <a class="nav-link disabled" href="./Profile.html">Profile</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <button
+            class="btn my-2 my-sm-0"
+            type="submit"
+            style="margin-right: 1rem; background-color: #ff4b2b; color: #fff"
+          >
+            Copy Profile Link
+          </button>
+          <a
+            class="btn my-2 my-sm-0"
+            type="submit"
+            href="./index.html"
+            style="margin-right: 1rem; background-color: #b97b11; color: #fff"
+          >
+            Log out
+          </a>
+        </form>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="ind">
+        <input
+          class="name border-gradient"
+          type="text"
+          placeholder="Enter Name"
+        />
+      </div>
+      <div class="ind">
+        <input class="border-gradient2" type="text" placeholder="Profession" />
+        <!-- <button class="buttonin"><img src="/images/up.png" alt="" class="sizee"></button> -->
+      </div>
+      <div class="ind">
+        <input class="border-gradient3" type="email" placeholder="Email" />
+        <!-- <button class="buttonin"><img src="/images/up.png" alt="" class="sizee"></button> -->
+      </div>
+      <!-- <div class="ind"><input class="tt border-gradient4" type="text" placeholder="Tiktok" >
+    </div> -->
+      <div class="ind">
+        <input class="border-gradient5" type="tel" placeholder="Number" />
+      </div>
+      <div class="ind">
+        <input
+          class="border-gradient6"
+          type="file"
+          accept="image/*"
+          placeholder="Profile Picture"
+        />
+        <!-- <button class="buttonin"><img src="/images/up.png" alt="" class="sizee"></button> -->
+      </div>
+      <button
+        type="submit"
+        class="btn btn-lg"
+        style="margin-right: 1rem; background-color: #ff4b2b; color: #fff"
+      >
+        Save
+      </button>
+    </div>
+    <footer class="ftr">
+      <div class="topcontainer">
+        <p>Via</p>
+        <img src="./images/Main logo slogan_edited 1.png" alt="" srcset="" />
+      </div>
+      <a href="#">Buy Expozure Card</a>
+    </footer>
+    <script>
+      function active() {
+        document.querySelector(".color_switcher").classList.toggle("active");
+      }
+      let themebutton = document.querySelectorAll("theme_button");
+      console.log(themebutton);
+      function changecolor(color) {
+        document
+          .querySelector(":root")
+          .style.setProperty("--main-color", color);
+        // localStorage.setItem("theme", color);
+      }
+      themebutton.forEach((color) => {
+        color.addEventListener("Click", () => {
+          let dataColor = color.getAttribute("data-color");
+          console.log(dataColor);
+          document
+            .querySelector(":root")
+            .style.setProperty("--main-color", dataColor);
+        });
+      });
+      function initThemeSelector() {
+        const themeSelect = document.getElementById("themeSelect");
+        const themeStylesheetLink = document.getElementById("stylesheetlink");
+        const currentTheme = localStorage.getItem("theme") || "default";
+
+        function activateTheme(themeName) {
+          themeStylesheetLink.setAttribute(
+            "href",
+            `css/themes/${themeName}.css`
+          );
+        }
+
+        themeSelect.addEventListener("change", () => {
+          activateTheme(themeSelect.value);
+          localStorage.setItem("theme", themeSelect.value);
+        });
+
+        themeSelect.value = currentTheme;
+        activateTheme(currentTheme);
+      }
+
+      initThemeSelector();
+    </script>
+  </body>
+</html>
